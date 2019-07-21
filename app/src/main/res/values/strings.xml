@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">PartyTask</string>
+    <string name="title_name">Кути честно.</string>
+    <string name="title_login">Вход для кутёжника</string>
+    <string name="description_main">Какой бла-бла-бла-бла и ещё бла бла бла и конечно же ещё на одну страницу бла бла
+        бла
+    </string>
+    <string name="description_login">Пожалуйста введите свой номер</string>
+    <string name="description_signup">Пожалуйста введите имя и номер телефона
+    </string>
+    <string name="version">v. 2.0</string>
+    <string name="button_logIn">Начать кутить</string>
+    <string name="button_signUp">Вход для Кутёжника</string>
+    <string name="default_phone">+7 777 123 45 67</string>
+    <string name="default_name">Имя</string>
+    <string name="button_already_exist">Уже был кутёжником?</string>
+    <string name="title_code">Проверка кода</string>
+    <string name="sent_code">Мы отправили код через смс</string>
+    <string name="valid_code">Код подтверждения</string>
+</resources>

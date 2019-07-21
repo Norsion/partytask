@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:orientation="vertical"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/sign_up_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/titleColorWhite"
+            app:navigationIcon="@drawable/ic_arrow_back_black_24dp">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+            android:id="@+id/title_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_logIn"
+            android:textColor="@color/titleColorDark"
+            android:textSize="34sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            app:layout_constraintTop_toBottomOf="@id/sign_up_toolbar"
+    />
+    <TextView
+            android:id="@+id/description_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/description_signup"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="16dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textAlignment="viewStart"
+            app:layout_constraintTop_toBottomOf="@id/title_signup"
+            />
+    <EditText
+            android:id="@+id/add_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginBottom="32dp"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:hint="@string/default_name"
+            android:textColor="@android:color/secondary_text_light_nodisable"
+            app:layout_constraintTop_toBottomOf="@id/description_sign"
+            android:background="@drawable/edittext_color"
+    />
+    <EditText
+            android:id="@+id/add_phone_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginBottom="32dp"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            app:layout_constraintTop_toBottomOf="@id/add_name_edit_text"
+            android:hint="@string/default_phone"
+            android:background="@drawable/edittext_color"
+            android:inputType="phone"
+    />
+    <Button
+            android:id="@+id/button_get_code"
+            android:text="Получить код"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:background="@drawable/button_color_green"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@id/add_phone_edit_text"
+    />
+
+    <Button android:id="@+id/button_already_exist"
+            android:text="@string/button_already_exist"
+            android:textColor="@color/titleColorDark"
+            android:textSize="16dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@id/button_get_code"
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
