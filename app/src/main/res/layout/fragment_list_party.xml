@@ -6,22 +6,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#ffffff"
-        tools:context=".presentation.UI.party.PartyListActivity"
+        tools:context=".presentation.UI.party.PartyListFragment"
         android:orientation="vertical">
+
     <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
         <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
+                android:id="@+id/toolbar_list"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#ffffff"
+                android:background="@color/titleColorWhite"
                 app:navigationIcon="@drawable/ic_arrow_back_black_24dp">
 
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
-
     <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

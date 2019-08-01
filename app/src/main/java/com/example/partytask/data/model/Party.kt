@@ -6,7 +6,7 @@ class Party(
     var name: String = "No name",
     var date: Long = 0L,
     var currentBalance: Int = 0,
-    @SerializedName ("balance")
+    @SerializedName ("balance") //Аннотация SerializedName помогает нам соотнести наименование в Json на сервере и в нащем объекте
     var fullBalance: Int = 0,
     var image: String = "",
     var countNewEvent: Int = 0,

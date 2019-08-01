@@ -8,10 +8,8 @@
             android:label=""
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
-            android:theme="@style/Theme.AppCompat.Light">
-        <activity android:name=".presentation.UI.party.ProfileActivity">
-        </activity>
-        <activity android:name=".presentation.UI.party.PartyListActivity">
+            android:theme="@style/AppTheme">
+        <activity android:name=".presentation.UI.party.MainActivity">
         </activity>
         <activity
                 android:name=".presentation.UI.registratation.StartActivity"

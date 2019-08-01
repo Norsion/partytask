@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:orientation="vertical"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+
+
+    <TextView
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:textColor="@color/titleColorDark"
+            android:text="Создание вечеринки"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_create_party"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+    />
+
+    <EditText
+            android:id="@+id/add_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/title_create_party"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginBottom="32dp"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:inputType="phone"
+            android:background="@drawable/edittext_color"
+    />
+
+    <EditText
+            android:id="@+id/add_date_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/add_name_edit_text"
+            android:clickable="true"
+            android:focusable="false"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"
+            android:hint="20.10.2019"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:inputType="phone"
+            android:background="@drawable/edittext_color"
+    />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Разрешить выбор лимитов"
+            app:layout_constraintTop_toBottomOf="@id/add_date_edit_text"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+
+
+    />
+
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/add_date_edit_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="16dp"
+    />
+
+    <Button
+            android:id="@+id/button_get_code"
+            android:text="Добавить друзей"
+            android:textColor="@color/titleColorWhite"
+            android:textSize="16dp"
+            android:background="@drawable/button_color_green"
+            app:layout_constraintTop_toBottomOf="@id/add_date_edit_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="32dp"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -32,10 +32,10 @@ class ApiClient {
     private fun initOkHttpClient(): OkHttpClient {
         return OkHttpClient().newBuilder().apply {
             readTimeout(10, TimeUnit.SECONDS)
-            connectTimeout(5, TimeUnit.SECONDS)
+            connectTimeout(5, TimeUnit.SECONDS) // таймауты на подключение, чтение и тд
             if (BuildConfig.DEBUG) {
-                val interceptor = HttpLoggingInterceptor()
-                interceptor.level = HttpLoggingInterceptor.Level.BODY
+                val interceptor = HttpLoggingInterceptor() // перехватчик запросов, помогает в логах выводить нам информацию из запросов
+                interceptor.level = HttpLoggingInterceptor.Level.BODY // кроме body есть ещё none, basic, head
                 addInterceptor(interceptor)
             }
         }.build()
@@ -52,7 +52,7 @@ class ApiClient {
                  it.proceed(request)
             }
             if (BuildConfig.DEBUG) {
-                val interceptor = HttpLoggingInterceptor()
+                val interceptor = HttpLoggingInterceptor() // перехватчик запросов
                 interceptor.level = HttpLoggingInterceptor.Level.BODY
                 addInterceptor(interceptor)
             }
@@ -63,7 +63,7 @@ class ApiClient {
     private fun createRetrofit(baseUrl: String, client: OkHttpClient): Retrofit {
         return Retrofit.Builder()
             .baseUrl(baseUrl)
-            .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+            .addCallAdapterFactory(RxJava2CallAdapterFactory.create()) //Здесь соединение Retrofit и Rxjava
             .addConverterFactory(GsonConverterFactory.create())
             .client(client)
             .build()
